@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="L1ltxT" name="PKPlus" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="bhqBzL" name="PKPlus">
+    <GROUP id="{50DBA022-F31E-77E2-875D-82AB6F0C9525}" name="GUI">
+      <FILE id="bH8sAh" name="HeaderPanel.cpp" compile="1" resource="0" file="Source/GUI/HeaderPanel.cpp"/>
+      <FILE id="vQQmDj" name="Helpers.h" compile="0" resource="0" file="Source/GUI/Helpers.h"/>
+      <FILE id="A72mZF" name="IntervalsPanel.cpp" compile="1" resource="0"
+            file="Source/GUI/IntervalsPanel.cpp"/>
+      <FILE id="hyUfqM" name="KeysPanel.cpp" compile="1" resource="0" file="Source/GUI/KeysPanel.cpp"/>
+      <FILE id="LSLIYL" name="NoteKey.cpp" compile="1" resource="0" file="Source/GUI/NoteKey.cpp"/>
+      <FILE id="pLPRpU" name="NoteMappingToggle.cpp" compile="1" resource="0"
+            file="Source/GUI/NoteMappingToggle.cpp"/>
+      <FILE id="wElrmV" name="Panels.h" compile="0" resource="0" file="Source/GUI/Panels.h"/>
+      <FILE id="teiyRE" name="PresetsPanel.cpp" compile="1" resource="0"
+            file="Source/GUI/PresetsPanel.cpp"/>
+    </GROUP>
+    <GROUP id="{33801F1A-D3D6-3398-B2D4-7195D8C44A9F}" name="Images">
+      <FILE id="pt2njt" name="background.jpg" compile="0" resource="1" file="Images/background.jpg"/>
+      <FILE id="IRra7g" name="buttons.png" compile="0" resource="1" file="Images/buttons.png"/>
+      <FILE id="UIaask" name="key_black_sprites.png" compile="0" resource="1"
+            file="Images/key_black_sprites.png"/>
+      <FILE id="jHKa3f" name="key_white_sprites.png" compile="0" resource="1"
+            file="Images/key_white_sprites.png"/>
+      <FILE id="pZTe4E" name="power_button.png" compile="0" resource="1"
+            file="Images/power_button.png"/>
+    </GROUP>
+    <GROUP id="{267435E7-B6CC-39F9-D595-7A1A5345F058}" name="Params">
+      <FILE id="jqW209" name="ArpeggiatorParams.cpp" compile="1" resource="0"
+            file="Source/Params/ArpeggiatorParams.cpp"/>
+      <FILE id="Hf9opM" name="IntervalParam.cpp" compile="1" resource="0"
+            file="Source/Params/IntervalParam.cpp"/>
+      <FILE id="LGbA3U" name="MidiParams.cpp" compile="1" resource="0" file="Source/Params/MidiParams.cpp"/>
+      <FILE id="DcjaZo" name="NoteParam.cpp" compile="1" resource="0" file="Source/Params/NoteParam.cpp"/>
+      <FILE id="TMaQ1N" name="NoteParams.cpp" compile="1" resource="0" file="Source/Params/NoteParams.cpp"/>
+      <FILE id="cXGqzH" name="Params.h" compile="0" resource="0" file="Source/Params/Params.h"/>
+    </GROUP>
+    <GROUP id="{A78AD273-1112-8C72-501B-52EBD79E9A18}" name="PresetBrowser">
+      <FILE id="eQrQQa" name="PresetManager.cpp" compile="1" resource="0"
+            file="Source/PresetBrowser/PresetManager.cpp"/>
+      <FILE id="AEBDck" name="PresetManager.h" compile="0" resource="0" file="Source/PresetBrowser/PresetManager.h"/>
+    </GROUP>
+    <GROUP id="{FDB628B1-6FEB-BD10-7761-B845947AE74C}" name="Source">
+      <FILE id="RU5gEU" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="UV8cbG" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="cD46Pp" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="uVgJ7D" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+    <FILE id="Bvd8zA" name="CMakeLists.txt" compile="0" resource="1" file="Source/CMakeLists.txt"/>
+    <FILE id="kUDxO5" name="MidiProcessor.cpp" compile="1" resource="0"
+          file="Source/MidiProcessor.cpp"/>
+    <FILE id="CU7xYh" name="MidiProcessor.h" compile="0" resource="0" file="Source/MidiProcessor.h"/>
+    <FILE id="Yrkw2e" name="UISettings.h" compile="0" resource="0" file="Source/UISettings.h"/>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="PKPlus"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="PKPlus"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../Program Files/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../Program Files/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
